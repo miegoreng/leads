@@ -1,0 +1,386 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"t",
+				"type"
+			],
+			[
+				"arr",
+				"array	$… = array (…)"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"model",
+				"CI_Model"
+			],
+			[
+				"load",
+				"load_view	CI - Load View"
+			],
+			[
+				"WP_Query",
+				"WP_Query"
+			],
+			[
+				"WP_Q",
+				"WP_Query	New WP_Query Class"
+			],
+			[
+				"ar",
+				"array	$… = array (…)"
+			],
+			[
+				"get_templ",
+				"get_template_part"
+			],
+			[
+				"stri",
+				"strip_tags"
+			],
+			[
+				"wp_en",
+				"wp_enqueue_script"
+			],
+			[
+				"wp_enqueue_s",
+				"wp_enqueue_script"
+			],
+			[
+				"wp_enqueue_scr",
+				"wp_enqueue_scripts"
+			],
+			[
+				"gettemplate",
+				"get_template_directory_uri"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"wp_f",
+				"wp_footer"
+			],
+			[
+				"get_templa",
+				"get_template_directory_uri"
+			],
+			[
+				"border-image",
+				"border-image-width"
+			],
+			[
+				"border-im",
+				"border-image-slice"
+			],
+			[
+				"border-i",
+				"border-image-source"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"f",
+				"float"
+			],
+			[
+				"v",
+				"visible"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"backgr",
+				"background-image"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/User/safari.sublime-build",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"Snippet: cont",
+				"Snippet: CI - Base Controller"
+			],
+			[
+				"Snippet: pag",
+				"Snippet: CI - Pagination Boilerplate"
+			],
+			[
+				"Snippet: pagnia",
+				"Snippet: CI - Pagination Boilerplate"
+			],
+			[
+				"Snippet: table",
+				"Snippet: CI - Generate Table"
+			],
+			[
+				"Snippet: mod",
+				"Snippet: CI - Base Model"
+			],
+			[
+				"Snippet: mode",
+				"Snippet: CI - Base Model"
+			],
+			[
+				"controller",
+				"Snippet: CI - Base Controller"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install	",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Snippet: HTML - HTML foundation"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Library/WebServer/Documents/leads/application/views/today.php",
+		"/Library/WebServer/Documents/leads/application/views/inc/header.php",
+		"/Library/WebServer/Documents/leads/application/controllers/today.php",
+		"/Library/WebServer/Documents/leads/application/views/show_records.php",
+		"/Library/WebServer/Documents/leads/application/controllers/add_data.php",
+		"/Library/WebServer/Documents/leads/application/config/config.php",
+		"/Library/WebServer/Documents/leads/application/views/dashboard.php",
+		"/Library/WebServer/Documents/leads/application/controllers/start.php",
+		"/Library/WebServer/Documents/leads/application/views/add_leads.php",
+		"/Library/WebServer/Documents/leads/assets/css/bootstrap.css",
+		"/Library/WebServer/Documents/leads/application/models/data_model.php",
+		"/Library/WebServer/Documents/leads/application/models/show_records_model.php",
+		"/Library/WebServer/Documents/leads/application/controllers/show_records.php",
+		"/Library/WebServer/Documents/leads/application/config/routes.php",
+		"/Library/WebServer/Documents/leads/application/views/inc/footer.php",
+		"/Library/WebServer/Documents/leads/assets/js/modal.js",
+		"/Library/WebServer/Documents/leads/application/controllers/test.php",
+		"/Library/WebServer/Documents/leads/assets/js/dropdown.js",
+		"/Library/WebServer/Documents/leads/assets/css/bootstrap-timepicker.css",
+		"/Library/WebServer/Documents/leads/assets/css/datepicker.css",
+		"/Library/WebServer/Documents/leads/assets/css/bootstrap.css.map",
+		"/Library/WebServer/Documents/leads/assets/js/bootstrap-datepicker.js",
+		"/Library/WebServer/Documents/leads/.htaccess",
+		"/Library/WebServer/Documents/leads/user_guide/overview/getting_started.html",
+		"/Users/denniseitner/Downloads/wp-theme-development-stage-02 5/html-prototype/index.html",
+		"/Library/WebServer/Documents/treehouse/wp-content/themes/wpportfolio/content-testimonials.php",
+		"/Library/WebServer/Documents/treehouse/wp-content/themes/wpportfolio/work.php",
+		"/Library/WebServer/Documents/treehouse/wp-content/themes/wpportfolio/treehouse.sublime-workspace",
+		"/Library/WebServer/Documents/treehouse/wp-content/themes/wpportfolio/home.php",
+		"/Library/WebServer/Documents/treehouse/wp-content/themes/wpportfolio/posts.php",
+		"/Library/WebServer/Documents/treehouse/wp-content/themes/wpportfolio/content-post.php",
+		"/Library/WebServer/Documents/treehouse/wp-config.php",
+		"/Library/WebServer/Documents/treehouse/wp-content/themes/wpportfolio/footer.php",
+		"/Library/WebServer/Documents/treehouse/wp-content/themes/wpportfolio/header.php",
+		"/Library/WebServer/Documents/treehouse/wp-content/themes/wpportfolio/functions.php",
+		"/Library/WebServer/Documents/treehouse/wp-content/themes/wpportfolio/js/theme.js",
+		"/Library/WebServer/Documents/treehouse/wp-content/themes/wpportfolio/page.php",
+		"/Library/WebServer/Documents/treehouse/wp-content/themes/wpportfolio/style.css",
+		"/Library/WebServer/Documents/treehouse/wp-content/themes/wpportfolio/css/flexslider.css",
+		"/Library/WebServer/Documents/treehouse/wp-content/themes/wpportfolio/index.php",
+		"/Library/WebServer/Documents/treehouse/wp-content/themes/wpportfolio/htaccess",
+		"/Library/WebServer/Documents/treehouse/wp-content/themes/wpportfolio/treehouse.sublime-project",
+		"/Library/WebServer/Documents/treehouse/wp-content/themes/wpportfolio/.htaccess",
+		"/Library/WebServer/Documents/treehouse/wp-content/themes/wpportfolio/front-page.php",
+		"/Users/denniseitner/Downloads/wp-theme-development-stage-02/html-prototype/css/grid.css",
+		"/Users/denniseitner/Downloads/border-image/start/img/border.png",
+		"/Library/WebServer/Documents/opentennis/application/config/config.php",
+		"/Users/denniseitner/Downloads/simple-php-contact-form/contact_form.php",
+		"/Library/WebServer/Documents/codeigniter/application/controllers/welcome.php",
+		"/Users/denniseitner/Desktop/Tennisformular_v2.php",
+		"/Users/denniseitner/Sites/OpenTennis/development/add_club3.php",
+		"/Users/denniseitner/Sites/OpenTennis/development/api.php",
+		"/Users/denniseitner/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Library/WebServer/Documents/Ex_Files_WP_Resp_Themes/Exercise Files/Anaximander-Static/functions.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"container",
+			"note",
+			"\"",
+			"();\n",
+			"postiion",
+			"trim|required|xss_clean",
+			"pref",
+			".png",
+			"backgr",
+			"wp-head"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			"trim|xss_clean"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 271.0,
+	"status_bar_visible": true
+}
