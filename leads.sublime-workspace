@@ -4,12 +4,32 @@
 		"selected_items":
 		[
 			[
-				"t",
-				"type"
+				"arr",
+				"array"
 			],
 			[
-				"arr",
-				"array	$… = array (…)"
+				"beleg",
+				"Belegnummer"
+			],
+			[
+				"comp",
+				"company_id"
+			],
+			[
+				"company",
+				"company_id"
+			],
+			[
+				"emplo",
+				"employee_id"
+			],
+			[
+				"btn",
+				"btn-lg"
+			],
+			[
+				"t",
+				"type"
 			],
 			[
 				"fun",
@@ -143,6 +163,18 @@
 		"selected_items":
 		[
 			[
+				"Snippet: ci con",
+				"Snippet: CI - Base Controller"
+			],
+			[
+				"contr",
+				"Snippet: CI - Base Controller"
+			],
+			[
+				"Snippet: model",
+				"Snippet: CI - Base Model"
+			],
+			[
 				"Snippet: cont",
 				"Snippet: CI - Base Controller"
 			],
@@ -216,21 +248,38 @@
 	},
 	"file_history":
 	[
+		"/Library/WebServer/Documents/leads/application/views/add_receipt.php",
+		"/Library/WebServer/Documents/leads/application/controllers/accounting.php",
+		"/Library/WebServer/Documents/leads/application/views/add_date_time.php",
+		"/Library/WebServer/Documents/leads/application/views/add_company_info.php",
+		"/Library/WebServer/Documents/leads/application/views/add_employer_info.php",
+		"/Library/WebServer/Documents/leads/application/views/add_data_confirmation.php",
 		"/Library/WebServer/Documents/leads/application/views/today.php",
+		"/Library/WebServer/Documents/leads/application/models/create_model.php",
+		"/Library/WebServer/Documents/leads/application/models/update_model.php",
+		"/Library/WebServer/Documents/leads/application/controllers/show_records.php",
+		"/Library/WebServer/Documents/leads/application/views/edit_record.php",
 		"/Library/WebServer/Documents/leads/application/views/inc/header.php",
+		"/Library/WebServer/Documents/leads/application/models/read_model.php",
 		"/Library/WebServer/Documents/leads/application/controllers/today.php",
+		"/Library/WebServer/Documents/leads/application/views/contacted.php",
+		"/Library/WebServer/Documents/leads/application/controllers/contact_history.php",
 		"/Library/WebServer/Documents/leads/application/views/show_records.php",
+		"/Library/WebServer/Documents/leads/application/views/edit_Record.php",
+		"/Library/WebServer/Documents/leads/application/models/delete_model.php",
+		"/Library/WebServer/Documents/leads/application/views/show_record_detail.php",
+		"/Library/WebServer/Documents/leads/application/models/show_records_model.php",
 		"/Library/WebServer/Documents/leads/application/controllers/add_data.php",
+		"/Library/WebServer/Documents/leads/application/models/data_model.php",
+		"/Library/WebServer/Documents/leads/application/views/add_employer_detail.php",
+		"/Library/WebServer/Documents/leads/application/models/delete_model.html",
+		"/Library/WebServer/Documents/leads/application/views/add_leads.php",
+		"/Library/WebServer/Documents/leads/application/views/inc/footer.php",
 		"/Library/WebServer/Documents/leads/application/config/config.php",
 		"/Library/WebServer/Documents/leads/application/views/dashboard.php",
 		"/Library/WebServer/Documents/leads/application/controllers/start.php",
-		"/Library/WebServer/Documents/leads/application/views/add_leads.php",
 		"/Library/WebServer/Documents/leads/assets/css/bootstrap.css",
-		"/Library/WebServer/Documents/leads/application/models/data_model.php",
-		"/Library/WebServer/Documents/leads/application/models/show_records_model.php",
-		"/Library/WebServer/Documents/leads/application/controllers/show_records.php",
 		"/Library/WebServer/Documents/leads/application/config/routes.php",
-		"/Library/WebServer/Documents/leads/application/views/inc/footer.php",
 		"/Library/WebServer/Documents/leads/assets/js/modal.js",
 		"/Library/WebServer/Documents/leads/application/controllers/test.php",
 		"/Library/WebServer/Documents/leads/assets/js/dropdown.js",
@@ -280,6 +329,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -287,6 +337,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"companyID\n\n\n\n\n\n",
+			"\"",
 			"container",
 			"note",
 			"\"",
@@ -381,6 +433,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 271.0,
+	"side_bar_width": 272.0,
 	"status_bar_visible": true
 }

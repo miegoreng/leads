@@ -44,21 +44,19 @@ class Data_model extends CI_Model {
     function add_contact_record(){
     	$date = date('Y-m-d', strtotime($this->input->post('date')));
 
-        echo $this->input->post('id');
-    	
+        $addNote = $this->input->post('addNote');
+       print_r($_POST);
+  
         $data = array(
-            'contacts_id' => $this->input->post('id'),
+            'company_id' => $this->input->post('addNote'),
     		'date' => $date,
     		'time' => $this->input->post('time'),
     		'notes' => $this->input->post('notes'),
     		 );
-    	$this->db->insert('contact_records', $data);
+        
+    	return $this->db->insert('contact_records', $data);
 
-        if ($data) {
-                return true; 
-            } else {            
-                return false;
-        }
+
         echo "data added";
 
     }

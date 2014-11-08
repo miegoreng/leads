@@ -1,3 +1,11 @@
+<?php 
+foreach($query as $data) {
+
+$company_id =  $data->company_id;
+$employee_id  = $data->employee_id;
+}
+echo $company_id;
+?>
 
 	<div class="col-md-3">
 		<ul class="pager">
@@ -19,8 +27,10 @@ $previous = $this->uri->segment(3, 0)-1;
 	    <span class="sr-only">Toggle Dropdown</span>
 	  </button>
 	  <ul class="dropdown-menu" role="menu">
-	    <li><a href="#">Edit Record</a></li>
-	    <li><a href="#">Delete Record</a></li>
+	    <li><?php echo anchor('show_records/edit_record/'.$company_id, 'Edit Records');?></li>
+   	    <li><?php echo anchor('show_records/delete_company/'.$company_id, 'Delete Compnay');?></li>
+   	    <li><?php echo anchor('show_records/delete_employee/'.$employee_id, 'Delete Contact (employee)');?></li>
+
 	    <li class="divider"></li>
 	    <li><a href="#">Add Note</a></li>
 	    <li><a href="#">Add Contact Record</a></li>
@@ -29,6 +39,7 @@ $previous = $this->uri->segment(3, 0)-1;
 
 	</div>
 </div>
+
 
 		<?php
 
@@ -44,64 +55,76 @@ $previous = $this->uri->segment(3, 0)-1;
 
 			foreach($query as $data) {
 				echo '<tr>';
+				echo '<td>Company ID</td>';
+				echo '<td><b>'.$data->company_id.'</b></td>';
+				echo '</tr>';
+
+				echo '<tr>';
 				echo '<td>Company</td>';
 				echo '<td><b>'.$data->company.'</b></td>';
 				echo '</tr>';
-
+				
 				echo '<tr>';
-				echo '<td>Vorname</td>';
-				echo '<td>'.$data->first_name.'</td>';
+				echo '<td>Employee ID</td>';
+				echo '<td><b>'.$data->employee_id.'</b></td>';
 				echo '</tr>';
 
-
 				echo '<tr>';
-				echo '<td>Nachname</td>';
-				echo '<td>'.$data->last_name.'</td>';
+				echo '<td>First Name</td>';
+				echo '<td><b>'.$data->first_name.'</b></td>';
 				echo '</tr>';
 
+				echo '<tr>';
+				echo '<td>Last Name </td>';
+				echo '<td><b>'.$data->last_name.'</b></td>';
+				echo '</tr>';
 
 				echo '<tr>';
 				echo '<td>Position</td>';
-				echo '<td>'.$data->position.'</td>';
+				echo '<td><b>'.$data->position.'</b></td>';
 				echo '</tr>';
 
-
 				echo '<tr>';
-				echo '<td>Email</td>';
-				echo '<td><a href="mailto:'.$data->email.'">'.$data->email.'</a></td>';
-				echo '</tr>';
-
-
-				echo '<tr>';
-				echo '<td>Website</td>';
-				echo '<td><a href="'.$data->website.'">'.$data->website.'</a></td>';
+				echo '<td>E-Mail</td>';
+				echo '<td><b>'.$data->email.'</b></td>';
 				echo '</tr>';
 
 				echo '<tr>';
 				echo '<td>Linkedin</td>';
-				echo '<td><a href="'.$data->linkedin.'">'.$data->linkedin.'</a></td>';
+				echo '<td><b>'.$data->linkedin.'</b></td>';
 				echo '</tr>';
 
 				echo '<tr>';
 				echo '<td>Xing</td>';
-				echo '<td><a href="'.$data->xing.'">'.$data->xing.'</a></td>';
-				echo '</tr>';
+				echo '<td><b>'.$data->xing.'</b></td>';
+				echo '</tr>';	
 
 				echo '<tr>';
 				echo '<td>Phone</td>';
-				echo '<td>'.$data->phone.'</td>';
+				echo '<td><b>'.$data->phone.'</b></td>';
 				echo '</tr>';
 
 
 				echo '<tr>';
 				echo '<td>Street</td>';
-				echo '<td>'.$data->street.'</td>';
+				echo '<td><b>'.$data->street.'</b></td>';
+				echo '</tr>';	
+
+				echo '<tr>';
+				echo '<td>PLZ</td>';
+				echo '<td><b>'.$data->plz.'</b></td>';
+				echo '</tr>';	
+
+				echo '<tr>';
+				echo '<td>City</td>';
+				echo '<td><b>'.$data->city.'</b></td>';
 				echo '</tr>';
 
 				echo '<tr>';
-				echo '<td>Postal Code</td>';
-				echo '<td>'.$data->postal_code.'</td>';
+				echo '<td>Date Created</td>';
+				echo '<td><b>'.$data->date_created.'</b></td>';
 				echo '</tr>';
+
 
 				echo '</tbody>
 					  </table>
@@ -119,35 +142,21 @@ $previous = $this->uri->segment(3, 0)-1;
 
 	
 <hr/>
-<?php 
-foreach($query as $data) {
-echo $data->date.'<br>';
-echo $data->time.'<br>';
-echo $data->notes.'<br>';
-echo $data->method_of_contact.'<br>';
-}
 
-?>
 <h2>Contact Record</h2>
 
-<div class="well">
-<dl>
-  <dt>taesrteast</dt>
-  <dd>asdfasdfasdf</dd>
-</dl>
-</div>
 
-<div class="well">
-<dl>
-  <dt>taesrteast</dt>
-  <dd>asdfasdfasdf</dd>
-</dl>
-</div>
+<?php 
+if (is_array($query)) {
+foreach($query as $data) {
+	echo '<div class="well"><dl>';
+	echo ' <dt>Date/Time: '.$data->date.' : '.$data->time.'</dt>';
+	echo '<dd>'.$data->notes.'</dd>';
+	echo '</dl></div>';
+	}
+	};
+
+?>
 
 
-<div class="well">
-<dl>
-  <dt>taesrteast</dt>
-  <dd>asdfasdfasdf</dd>
-</dl>
 </div>

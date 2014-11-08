@@ -16,21 +16,14 @@
     <link href="<?php echo base_url();?>assets/css/offcanvas.css" rel="stylesheet">
 	   <link href="<?php echo base_url() ?>assets/css/style.css" rel="stylesheet">
      <link href="<?php echo base_url() ?>assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-
  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="<?php echo base_url() ?>assets/js/html5shiv.js"></script>
       <script src="<?php echo base_url() ?>assets/js/respond.min.js"></script>
     <![endif]-->
-
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-
-
-   
   </head>
-
   <body>
-
      <!-- Fixed navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
@@ -54,11 +47,18 @@
                 <li><a href="<?php echo base_url("today"); ?>">Show Today's</a></li>
                 <li><a href="<?php echo base_url("show_records"); ?>">All Contacts</a></li>                <li class="divider"></li>
                 <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
+                <li><a href="<?php echo base_url("contact_history"); ?>">Contact History</a></li>
                 <li><a href="#">One more separated link</a></li>
               </ul>
             </li>
-
+             <li class="dropdown">
+              <a href="<?php echo base_url("sales"); ?>" class="dropdown-toggle" data-toggle="dropdown">Contacts <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="<?php echo base_url("add_data"); ?>">Companies</a></li>
+                <li><a href="<?php echo base_url("today"); ?>">People</a></li>
+ 
+              </ul>
+            </li>
             
           </ul>
          

@@ -31,7 +31,12 @@ class Show_records_model extends CI_Model {
 
     public function get_today($limit, $start) {
         $this->db->limit($limit, $start);
-        $query = $this->db->query(' SELECT * FROM contacts where DATE(`date`) = DATE(NOW())');
+        $query = $this->db->query('SELECT company_info.company_id, company_info.company, company_info.website , company_info.street, company_info.city, company_info.plz,
+                                  employee_info.employee_id, employee_info.first_name, employee_info.last_name, employee_info.position, employee_info.email, 
+                                  employee_info.linkedin, employee_info.xing, employee_info.phone      
+                                   FROM company_info, employee_info, contact_records 
+                                   WHERE DATE(  `date` ) = DATE( NOW( ) )  
+                                   AND company_info.company_id = employee_info.company_id');
         if ($query->num_rows() > 0) {
             foreach ($query->result() as $row) {
                 $data[] = $row;
@@ -47,6 +52,7 @@ class Show_records_model extends CI_Model {
     $this->db->delete('contacts');
    }
 
+
     function update_contact_status(){
         $data = array(
                'status' => $this->uri->segment(3),
@@ -58,43 +64,7 @@ class Show_records_model extends CI_Model {
 
 
 
-    public function get_contact_detail(){
-
-        $limit = 1;
-      //  $this->db->get('contacts');
-      //  $this->db->get('contact_records');
-       // $query = $this->db->get_where('contacts', array('id' => $this->uri->segment(3)), $limit);
-
-       /* $query = $this->db->select(*)
-            ->from('contacts')
-            ->from('contact_records')
-            ->where(array('id' => $this->uri->segment(3)))
-            ->where('contact_records.contacts_id', $this->uri->segment(3));
-*/      //$id = $this->uri->segment(3, 0)
-
-        $query = $this->db->query("SELECT  `contacts`. * ,  `contact_records`. * FROM contacts, contact_records WHERE contacts.id =22 AND contact_records.contacts_id =22");
-/*
-        $this->db->select("*");
-        $this->db->from("contacts");
-        $this->db->join("contact_records", "contacts_id.id=contacts_records.contacts_id");
-        $this->db->where($this->uri->segment(3, 0));
-        $query = $this->db->get();
-        return $query->result();
-*/
-
-
-        var_dump($query);
-
-
-        if ($query->num_rows() > 0) {
-            foreach ($query->result() as $row) {
-                $data[] = $row;
-            }           
-            return $data;
-        } 
-        return false;
-
-    }
+   
 
 
 

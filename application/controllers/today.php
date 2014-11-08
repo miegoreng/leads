@@ -7,21 +7,21 @@ class Today extends CI_Controller {
 public function __construct() {
 
         parent:: __construct();
-        $this->load->helper("url");
+        $this->load->helper('url');
         $this->load->helper('html');
         $this->load->helper('form');
-        $this->load->model("show_records_model");
-        $this->load->model("data_model");
+        $this->load->model('read_model');
+        $this->load->model('create_model');
         $this->load->library("pagination");
         $this->load->library('form_validation');
-
+        $this->load->library('uri');
     }
  
     public function index() {
 
         $config = array();
         $config["base_url"] = base_url() . "/today";
-        $config["total_rows"] = $this->show_records_model->record_count();
+        $config["total_rows"] = $this->read_model->record_count();
         $config["per_page"] = 10;
         $config["uri_segment"] = 2;
         $config['full_tag_open'] = '<div class="pagination"> ';
@@ -46,11 +46,11 @@ public function __construct() {
  
         $this->pagination->initialize($config);
         $page = ($this->uri->segment(2)) ? $this->uri->segment(2) : 0;
-        $data["results"] = $this->show_records_model->get_today($config["per_page"], $page);
+        $data["results"] = $this->read_model->get_today($config["per_page"], $page);
         $data["links"] = $this->pagination->create_links();
         $this->load->view('inc/header');
         $this->load->view('today', $data);
-                $this->load->view('inc/footer');
+        $this->load->view('inc/footer');
 
     }
 
@@ -80,22 +80,15 @@ public function __construct() {
 
     //if client/lead needs to be contacted again
     function add_contact_record(){
-/*
-    $this->form_validation->set_rules('date', 'date', 'trim|required|xss_clean');
-    $this->form_validation->set_rules('time', 'time', 'trim|required|xss_clean');
-    $this->form_validation->set_rules('notes', 'notes', 'trim|required|xss_clean');
-   
-        if($this->form_validation->run() == FALSE) {
-            
-            $this->index();
-        
-        } else {
-*/        
-            //insert data
-        $this->data_model->add_contact_record();
+
+     $this->create_model->add_contact_record();
+     $this->load->view('inc/header');
+      echo '<div class="alert alert-success">
+          <strong>Well done!</strong> Status updated.
+        </div>';
+
         }
 
-   // }
 
 }
 
